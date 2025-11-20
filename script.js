@@ -331,7 +331,7 @@ const fadeInObserver = new IntersectionObserver((entries) => {
 
 // Add fade-in animation to elements
 document.addEventListener('DOMContentLoaded', () => {
-    const elementsToAnimate = document.querySelectorAll('.education-item, .experience-item, .project-card, .skills-category, .contact-item');
+    const elementsToAnimate = document.querySelectorAll('.education-item, .project-card, .skills-category, .contact-item');
 
     elementsToAnimate.forEach(el => {
         el.style.opacity = '0';
@@ -558,7 +558,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 3D Tilt Effects
 function initTiltEffects() {
-    const tiltElements = document.querySelectorAll('.education-item, .experience-content, .stat-item');
+    const tiltElements = document.querySelectorAll('.education-item, .stat-item');
 
     tiltElements.forEach(element => {
         element.addEventListener('mousemove', (e) => {
