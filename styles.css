@@ -742,10 +742,9 @@ section {
 }
 
 .about-content-simple {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -945,6 +944,80 @@ section {
     background: #ff6b35;
     color: white;
     transform: translateY(-2px);
+}
+
+/* Horizontal About Card */
+.about-visual-horizontal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card-horizontal {
+    background: white;
+    border-radius: 20px;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.card-profile-horizontal {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar-horizontal {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+}
+
+.card-info-horizontal h4 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #2d3748;
+    margin-bottom: 0.2rem;
+}
+
+.card-info-horizontal p {
+    color: #718096;
+    font-weight: 500;
+}
+
+.card-skills-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about-card-horizontal {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+    }
+
+    .card-profile-horizontal {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .card-skills-horizontal {
+        justify-content: center;
+    }
 }
 
 /* Floating Icons */
